@@ -1,6 +1,6 @@
-# PyroMan-Userbot Telegram
+# ZerPyroUserbotV2
 
-PyroMan-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
+ZerPyroUserbot adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
 
 Saya membuat repository ini untuk bersenang-senang sekaligus membantu anda mengelola grup secara efisien dan untuk membantu mengurangi kebosanan saat menggunakan telegram.
 
@@ -23,12 +23,12 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 - Generate Session via <a href="https://t.me/StringManRobot">Telegram String Generation Bot</a>
 ## 🏷 Support
 
-- Follow Channel [@Lunatic0de](https://t.me/Lunatic0de) untuk info Update bot 
-- Gabung Group [@SharingUserbot](https://t.me/SharingUserbot) untuk diskusi, pelaporan bug, dan bantuan tentang PyroMan-Userbot.
+- Follow Channel [@yourpapladiesboy](https://t.me/yourpapladiesboy) untuk info Update bot 
+- Gabung Group [@cari_teman_vitrual_ind](https://t.me/cari_teman_virtual_ind) untuk diskusi, pelaporan bug, dan bantuan tentang PyroMan-Userbot.
 
 ## 👨🏻‍💻 Credits
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
--  [Risman](https://github.com/mrismanaziz) for [PyroMan-Userbot](https://github.com/mrismanaziz/PyroMan-Userbot)
+-  [Risman](https://github.com/mrismanaziz) for [PyroZerUserbotV2](https://github.com/zergiiorvdra/ZerUserbotV2)
 
 #### Special Thanks To [Everyone](https://github.com/mrismanaziz/PyroMan-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [TeamDerUntergang](https://github.com/TeamDerUntergang/Telegram-SedenUserBot) : SedenUserBot
@@ -36,8 +36,8 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 -  [TeamYukki](https://github.com/TeamYukki/YukkiMusicBot) : YukkiMusicBot
 -  [ITZ-ZAID](https://github.com/ITZ-ZAID) : Zaid-UserBot
 -  [Risman](https://github.com/mrismanaziz) : PyroMan-Userbot
--  [Tofikdn](https://github.com/tofikdn) : Tede
--  [Toni](https://github.com/Toni880) : Prime-UserBot
+-  [zer](https://github.com/zergiiorvdra) : Zer
+-  [Zer](https://github.com/zergiiorvdra) : PyroZerUserBotV2
 
 ## 📑 License
 Licensed under [GNU General Public License v3.0](https://github.com/mrismanaziz/PyroMan-Userbot/blob/Man-Userbot/LICENSE) All designs were created by [@mrismanaziz](https://github.com/mrismanaziz)
