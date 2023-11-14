@@ -18,7 +18,7 @@ from ProjectMan.helpers.misc import create_botlog, heroku
 from ProjectMan.modules import ALL_MODULES
 
 MSG_ON = """
-🔥 **PyroMan-Userbot Berhasil Di Aktifkan**
+🔥 **PyroZerV2-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
@@ -28,25 +28,25 @@ MSG_ON = """
 
 async def main():
     for all_module in ALL_MODULES:
-        importlib.import_module(f"ProjectMan.modules.{all_module}")
+        importlib.import_module(f"ZerPyroV2.modules.{all_module}")
     for bot in bots:
         try:
             await bot.start()
             bot.me = await bot.get_me()
-            await bot.join_chat("Lunatic0de")
-            await bot.join_chat("SharingUserbot")
+            await bot.join_chat("yourladiespapboy")
+            await bot.join_chat("cari_teman_virtual_ind")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
                 )
             except BaseException:
                 pass
-            LOGGER("ProjectMan").info(
+            LOGGER("ZerPyroV2").info(
                 f"Logged in as {bot.me.first_name} | [ {bot.me.id} ]"
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("ProjectMan").info(f"PyroMan-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+    LOGGER("ZerPyroV2").info(f"PyroZerV2-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
     if bot1 and not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -54,7 +54,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("ProjectMan").info("Starting PyroMan-UserBot")
+    LOGGER("ZerPyroV2").info("Starting PyroZerV2-UserBot")
     install()
     heroku()
     LOOP.run_until_complete(main())
