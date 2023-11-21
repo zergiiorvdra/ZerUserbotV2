@@ -69,9 +69,9 @@ def git():
         UPSTREAM_REPO = REPO_URL
     try:
         repo = Repo()
-        LOGGER("ZerProject").info(f"Git Client Found")
+        LOGGER("ProjectMan").info(f"Git Client Found")
     except GitCommandError:
-        LOGGER("ZerProject").info(f"Invalid Git Command")
+        LOGGER("ProjectMan").info(f"Invalid Git Command")
     except InvalidGitRepositoryError:
         repo = Repo.init()
         if "origin" in repo.remotes:
@@ -96,7 +96,7 @@ def git():
         except GitCommandError:
             repo.git.reset("--hard", "FETCH_HEAD")
         install_req("pip3 install --no-cache-dir -U -r requirements.txt")
-        LOGGER("ZerProject").info("Fetched Latest Updates")
+        LOGGER("ProjectMan").info("Fetched Latest Updates")
 
 
 def is_heroku():
@@ -110,7 +110,7 @@ def heroku():
             try:
                 Heroku = heroku3.from_key(HEROKU_API_KEY)
                 HAPP = Heroku.app(HEROKU_APP_NAME)
-                LOGGER("ZerProject").info(f"Heroku App Configured")
+                LOGGER("ProjectMan").info(f"Heroku App Configured")
             except BaseException as e:
                 LOGGER("Heroku").error(e)
                 LOGGER("Heroku").info(
@@ -125,7 +125,7 @@ async def in_heroku():
 async def create_botlog(client):
     if HAPP is None:
         return
-    LOGGER("ZerProject").info(
+    LOGGER("ProjectMan").info(
         "TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA"
     )
     desc = "Group Log untuk ZerPyro-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @cari_teman_virtual_ind ✨"
@@ -138,6 +138,6 @@ async def create_botlog(client):
             path = dotenv.find_dotenv("config.env")
             dotenv.set_key(path, "BOTLOG_CHATID", gruplog.id)
     except Exception:
-        LOGGER("ZerProject").warning(
+        LOGGER("ProjectMan").warning(
             "var BOTLOG_CHATID kamu belum di isi. Buatlah grup telegram dan masukan bot @MissRose_bot lalu ketik /id Masukan id grup nya di var BOTLOG_CHATID"
         )
