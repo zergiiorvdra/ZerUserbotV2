@@ -1,7 +1,8 @@
 {
-  "name": "PyroZer-Userbot",
-  "description": "[PyroZer-Userbot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.",
+  "name": "PyroZerV2-Userbot",
+  "description": "[PyroZerV2-Userbot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.",
   "stack": "heroku-22",
+  "logo": "https://telegra.ph/file/537a579c00648ae511987.jpg",
   "env": {
     "API_ID": {
       "description": "Dapatkan API ID di web my.telegram.org Masukan yg APP ID Telegram",
