@@ -11,18 +11,18 @@
 class First:
     ALIVE = "`Still Working On Fire 🔥`"
     REPO = """
-**Hey**, __I am using__ 🔥 **PyroMan-Userbot** 🔥
+**Hey**, __I am ngising__ 🔥 **ZerPyro-Userbot** 🔥
 
-      __Thanks For Using me__
+      __Thanks For Ngising me__
 
 ✣ **Userbot Version :** `{}`
-✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)
-✣ **Channel Man :** [Lunatic0de](t.me/Lunatic0de)
-✣ **Owner Repo :** [Risman](t.me/mrismanaziz)
-✣ **Repo :** [PyroMan-Userbot](https://github.com/mrismanaziz/PyroMan-Userbot)"""
-    CREATOR = 'I was created by my master <a href="https://github.com/mrismanaziz/PyroMan-Userbot">Man</a> on a rainy day.'
+✣ **Group Support :** [cari teman virtual](t.me/cari_teman_virtual_ind)
+✣ **Channel Man :** [my life](t.me/yagitudahpokonya)
+✣ **Owner Repo :** [zer](t.me/zergiiorvdra)
+✣ **Repo :** [ZerPyro-Userbot](https://github.com/zergiiorvdra/ZerUserbotV2)"""
+    CREATOR = 'I was created by my master <a href="https://github.com/zergiiorvdra/ZerUserbotV2">Man</a> on a rainy day.'
     MSG_ON = """
-🔥 **PyroMan-Userbot Berhasil Di Aktifkan**
+🔥 **ZerPyro-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
