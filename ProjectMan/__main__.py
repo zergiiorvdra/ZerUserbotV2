@@ -28,7 +28,7 @@ MSG_ON = """
 
 async def main():
     for all_module in ALL_MODULES:
-        importlib.import_module(f"ZerPyro.modules.{all_module}")
+        importlib.import_module(f"ProjectMan.modules.{all_module}")
     for bot in bots:
         try:
             await bot.start()
@@ -41,12 +41,12 @@ async def main():
                 )
             except BaseException:
                 pass
-            LOGGER("ZerPyro").info(
+            LOGGER("ProjectMan").info(
                 f"Logged in as {bot.me.first_name} | [ {bot.me.id} ]"
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("ZerPyro").info(f"ZerPyro-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+    LOGGER("ProjectMan").info(f"PyroMan-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
     if bot1 and not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -54,7 +54,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("ZerPyro").info("Starting ZerPyro-UserBot")
+    LOGGER("ProjectMan").info("Starting PyroMan-UserBot")
     install()
     heroku()
     LOOP.run_until_complete(main())
