@@ -17,7 +17,7 @@ async def extract_audio(client: Client, message: Message):
         await message.edit("`Downloading Video . . .`")
         file = await client.download_media(
             message=replied,
-            file_name="ProjectMan/resources/",
+            file_name="ZerProject/resources/",
         )
         replied.video.duration
         out_file = file + ".mp3"
