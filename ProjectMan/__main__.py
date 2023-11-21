@@ -18,7 +18,7 @@ from ProjectMan.helpers.misc import create_botlog, heroku
 from ProjectMan.modules import ALL_MODULES
 
 MSG_ON = """
-🔥 **PyroZerV2-Userbot Berhasil Di Aktifkan**
+🔥 **ZerPyro-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
@@ -28,7 +28,7 @@ MSG_ON = """
 
 async def main():
     for all_module in ALL_MODULES:
-        importlib.import_module(f"ZerPyroV2.modules.{all_module}")
+        importlib.import_module(f"ZerPyro.modules.{all_module}")
     for bot in bots:
         try:
             await bot.start()
@@ -41,12 +41,12 @@ async def main():
                 )
             except BaseException:
                 pass
-            LOGGER("ZerPyroV2").info(
+            LOGGER("ZerPyro").info(
                 f"Logged in as {bot.me.first_name} | [ {bot.me.id} ]"
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("ZerPyroV2").info(f"PyroZerV2-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+    LOGGER("ZerPyro").info(f"ZerPyro-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
     if bot1 and not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -54,7 +54,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("ZerPyroV2").info("Starting PyroZerV2-UserBot")
+    LOGGER("ZerPyro").info("Starting ZerPyro-UserBot")
     install()
     heroku()
     LOOP.run_until_complete(main())
